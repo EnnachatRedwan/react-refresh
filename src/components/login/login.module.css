@@ -1,0 +1,27 @@
+.form {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 20px;
+  background-color: #222;
+  color: #fff;
+  box-shadow: none;
+  font-size: 1.2rem;
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.controls input {
+  padding: 3px 10px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+}
