@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AuthContext from "./auth-context";
 
 const AuthContextProvider = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const authStatus=localStorage.getItem('IS_LOGGED_IN');
+    authStatus==="1"?setIsLoggedIn(true):setIsLoggedIn(false);
+  }, []);
 
   const login = () => {
     setIsLoggedIn(true);

@@ -4,6 +4,13 @@
   border: none;
   color: #fff;
   font-size: 1.4rem;
+  font-weight: bold;
   cursor: pointer;
   background-color: deeppink;
+  transition: .25s;
+}
+.button:disabled{
+  background-color: #777;
+  color: #fff;
+  cursor: not-allowed;
 }
